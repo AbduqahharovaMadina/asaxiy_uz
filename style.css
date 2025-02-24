@@ -1,0 +1,880 @@
+/* Asosiy stillar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.asaxiy {
+    width: 100%;
+    height: auto;
+    background-color: whitesmoke;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: blue;
+}
+
+.navbar {
+    width: 100%;
+    height: 120px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.assaxiy {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    padding: 10px 40px;
+
+
+}
+
+.logo img {
+    width: 120px;
+}
+
+.input {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px 15px;
+    background-color: rgb(16, 127, 238);
+    color: white;
+    border-radius: 12px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: blue;
+}
+
+.search {
+    flex: 1;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 3px solid dodgerblue;
+    border-radius: 12px;
+    padding: 0 0px;
+    color: gray;
+}
+
+.qidiruv {
+    padding: 6px 8px;
+    background-color: rgb(16, 127, 238);
+    color: white;
+    border-radius: 0 12px 12px 0;
+    cursor: pointer;
+}
+
+.icons {
+    display: flex;
+    gap: 15px;
+}
+
+.taqqoslash {
+    text-align: center;
+    font-size: 12px;
+}
+
+.taqqoslash img {
+    width: 20px;
+    height: 20px;
+}
+.taqqoslash p:hover{
+    color: blue;
+}
+
+.chegirmalar {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 15px;
+}
+
+
+
+.chegirmalar ul li {
+    font-weight: bold;
+}
+.chegirmalar ul li:hover{
+    color: blue;
+}
+
+.uy {
+    width: 100%;
+    height: auto;
+    padding: 10px 10px;
+    display: none;
+}
+
+.chegirmalar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+
+}
+
+/* PLANSHE TLAR UCHUN MOSLASH */
+@media (max-width: 1024px) {
+    .navbar {
+        height: 130px;
+    }
+
+    .input {
+        width: 60%;
+    }
+
+    .btn {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+
+    .search {
+        height: 30px;
+    }
+
+    .icons {
+        gap: 10px;
+    }
+
+    .taqqoslash p {
+        font-size: 10px;
+    }
+}
+
+/* MOBIL TELEFONLAR UCHUN MOSLASH */
+@media (max-width: 800px) {
+    .navbar {
+        height: auto;
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .assaxiy {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+
+    .input {
+        width: 50%;
+        display: flex;
+        gap: 10px;
+    }
+
+    .btn {
+        width: 90%;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .search {
+        width: 90%;
+        height: 30px;
+        font-size: 11px;
+    }
+
+    .icons {
+        display: none;
+    }
+
+    .taqqoslash {
+        width: 20%;
+    }
+
+    .chegirmalar {
+        height: auto;
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    .chegirmalar ul {
+        gap: 10px;
+        display: flex;
+    }
+
+    .chegirmalar ul li {
+        display: flex;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:615px) {
+    .navbar {
+        height: 50px;
+    }
+
+    .assaxiy {
+        display: none;
+    }
+
+    .chegirmalar {
+        height: auto;
+        display: none;
+    }
+
+    .uy {
+        display: block;
+        font-size: 14px;
+    }
+
+}
+
+.card {
+    width: 95%;
+    height: auto;
+    margin: auto;
+}
+
+.oddiy {
+    width: 100%;
+    height: auto;
+    margin-top: 120px;
+    padding-top: 30px;
+
+
+}
+
+.super {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    background-color: white;
+    display: none;
+}
+
+.super_narx {
+    width: 100%;
+    height: 40px;
+    margin: 0 auto;
+    padding-top: 10px;
+
+}
+
+select {
+    width: 25%;
+    height: 23px;
+    border-radius: 6px;
+    border: 2px solid dodgerblue;
+}
+
+.oddiy_img {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 180px;
+    gap: 10px;
+}
+
+.images img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+
+}
+
+@media screen and (max-width:1024px) {
+    .oddiy_img {
+        padding-top: 10px;
+    }
+
+    .images img {
+        width: 98%;
+        height: 90%;
+
+    }
+
+}
+
+@media screen and (max-width:800px) {
+    .oddiy_img {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 140px, ;
+    }
+
+}
+
+@media screen and (max-width:615px) {
+    .super {
+        display: block;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: -80px;
+    }
+
+    .oddiy_img {
+        width: 90%;
+        margin: 0 auto;
+        grid-template-columns: repeat(1, 4fr);
+        grid-template-rows: 120px, ;
+    }
+
+}
+
+.telefon {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+
+
+.phone {
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 400px;
+    gap: 10px;
+    flex-wrap: wrap;
+
+}
+
+.gadjet {
+
+    background-color: white;
+    border-radius: 12px;
+    padding: 0 10px;
+    transition: 1s;
+
+
+}
+
+.gadjet:hover {
+    transform: scale(1.1);
+}
+
+.gadjet2 {
+    width: 100%;
+    height: 45%;
+
+
+}
+
+.gadget2_img {
+    width: 60%;
+    height: 90%;
+    margin: 10px auto;
+
+}
+
+.gatget_img {
+    width: 100%;
+}
+
+.gadjet3 {
+    width: 100%;
+    height: 55%;
+
+
+}
+
+.gadjet3 p {
+    font-size: 14px;
+}
+
+.gadjet3 p:hover {
+    color: dodgerblue;
+}
+
+.star {
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.stars {
+    width: 65%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.star i {
+    color: orange;
+}
+
+.som {
+    width: 90%;
+    height: 25px;
+    border: 1px solid orangered;
+    border-radius: 4px;
+    margin: 10px 0;
+    color: orangered;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.bir_marta {
+    width: 100%;
+    height: 50px;
+    margin-top: 15px;
+    display: flex;
+    gap: 5px;
+
+
+}
+
+.sotib_oling {
+    width: 68%;
+    height: 100%;
+    background-color: rgb(31, 126, 221);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 13px;
+    text-align: center;
+    transition: .3s;
+}
+
+.sotib_oling:hover {
+    background-color: blue;
+}
+
+.savat {
+    width: 30%;
+    height: 100%;
+    background-color: cyan;
+    border-radius: 8px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+@media screen and (max-width:1050px) {
+    .phone {
+        grid-template-columns: repeat(4, 1fr);
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .sotib_oling {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .bozori_chaqqon {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .phone {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .sotib_oling {
+        font-size: 13px;
+    }
+
+}
+
+@media screen and (max-width:800px) {
+    .phone {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 310px 310px 330px;
+        gap: 25px;
+
+
+    }
+
+    .gadjet2 {
+        width: 90%;
+        height: 35%;
+    }
+
+    .gadget2_img img {
+        height: 100%;
+    }
+
+    .gadjet3 {
+        padding-top: 10px;
+    }
+
+    .bir_marta {
+        height: 40px;
+    }
+
+    .sotib_oling {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+}
+
+@media screen and (max-width:510px) {
+
+
+    .phone {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 340px 340px 340px 360px 360px;
+    }
+
+    .gadjet {
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+
+
+
+
+
+
+
+.bozori_chaqqon {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bozori_chaqqonlari {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 2fr);
+    grid-template-rows: 400px 400px;
+    gap: 18px;
+}
+
+.muqaddima {
+    border-radius: 12px;
+    background-color: white;
+    padding: 0 10px;
+    transition: 1s;
+}
+
+.muqaddima:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width:1250px) {
+    .bozori_chaqqonlari {
+        grid-template-columns: repeat(4, 3fr);
+        grid-template-rows: 400px 400px 400px;
+    }
+}
+
+@media screen and (max-width:950px) {
+    .bozori_chaqqonlari {
+        grid-template-columns: repeat(3, 3fr);
+        grid-template-rows: 400px 400px 400px;
+    }
+
+    .sotib_oling {
+        /* height: 40px; */
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .gadjet3 p {
+        padding-top: 10px;
+    }
+
+    .bir_marta {
+        height: 40px;
+    }
+}
+
+@media screen and (max-width:745px) {
+    .bozori_chaqqonlari {
+        grid-template-columns: repeat(2, 3fr);
+    }
+}
+
+@media screen and (max-width:510px) {
+    .bozori_chaqqonlari {
+        width: 60%;
+        margin: 0 auto;
+        grid-template-columns: repeat(1, 3fr);
+        grid-template-rows: 380px 380px 380px;
+    }
+
+}
+
+.small_footer {
+    margin-top: 50px;
+    width: 100%;
+    height: 200px;
+    background-color: rgb(23, 113, 204);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.small_footer2 {
+    width: 90%;
+    height: 140px;
+    border-radius: 32px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 140px;
+    gap: 10px;
+}
+
+.qulaylik {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.qulay {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.qulayli {
+    font-size: 15px;
+    width: 70%;
+    height: 100%;
+    text-align: center;
+    padding-top: 30px;
+}
+.qulayli p{
+    margin-top: 10px;
+}
+
+
+@media screen and (max-width:1200px){
+    .small_footer{
+        height: 300px;
+    }
+    .small_footer2{
+        height: 190px;
+        grid-template-columns: repeat(2 , 2fr);
+        grid-template-rows:60px 60px ;
+    }
+}
+@media screen and (max-width:600px){
+    .small_footer{
+        height: 400px;
+    }
+    .small_footer2{
+        height: 360px;
+        grid-template-columns: repeat(1,4fr);
+        grid-template-rows: 70px 70px 70px 70px;
+    }
+    
+}
+
+.footer{
+    width: 100%;
+    height: 450px;
+    background-color: white;
+}
+.footer22{
+    width: 100%;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 400px;
+    gap: 10px;
+
+}
+.footer33{
+    padding: 20px 20px;
+    line-height: 35px;
+}
+.footer33 p{
+    color: gray;
+}
+.dokon{
+    width: 230px;
+    border-radius: 6px;
+    height: 60px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: normal;
+    background-color: whitesmoke;
+}
+.dokon img{
+    height: 80%;
+    width: 50%;
+}
+.tolovlar{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 3fr);
+    grid-template-rows: 50px 50px 50px;
+    gap: 13px;
+}
+.uzcard{
+    border-radius: 4px;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.instagram{
+    margin-top: 10px;
+    width: 65%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.youtube{
+   font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+.youtube i:hover{
+    color: dodgerblue;
+}
+.tugadi{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer p:hover{
+    color: dodgerblue;
+}
+@media screen and (max-width:1000px){
+    .footer{
+        height:auto ;
+    }
+    .footer22{
+        grid-template-columns: repeat(2,2fr);
+        grid-template-rows: 350px 350px;
+    }
+    .footer hr{
+        margin-top: 350px;
+    }
+    .tugadi{
+        width: 100%;
+        margin-top: 10px;
+        text-align: center;
+    }
+    
+}
+@media screen and (max-width:770px) {
+    .footer22{
+        grid-template-columns: repeat(1, 4fr);
+        grid-template-rows: 350px 350px;
+    }
+    .footer hr{
+        margin-top: 1000px;
+    }
+    .tugadi{
+        width: 100%;
+        margin-top: 10px;
+        text-align: center;
+    }
+    
+}
+.taqqosla{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.taqqoslash_small{
+    width: 300px;
+    height: 300px;
+    text-align: center;
+}
+.taqqoslash_small h3{
+    margin-top: 10px;
+}
+.tolovlarr{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.tolovlarr_small{
+    margin-top: 150px;
+    width: 90%;
+    height: 70vh;
+    border-radius: 18px;
+    background-color: white;
+    display: flex;
+}
+.tolovlar1{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    padding: 60px 0;
+    line-height: 37px;
+}
+.tolovlar1 p{
+    color: gray;
+}
+.tasdiqlayman{
+    width: 160px;
+    height: 40px;
+    background-color: rgb(22, 119, 216);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 220px;
+    margin-top: 10px;
+    border-radius: 8px;
+    transition: .3s;
+}
+.tasdiqlayman:hover{
+    transform: scale(1.1);
+}
