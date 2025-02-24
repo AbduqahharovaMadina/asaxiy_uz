@@ -100,6 +100,7 @@ a:hover {
     padding-left: 20px;
     color: gray;
     border: none ;
+    outline: none;
 
 }
 
