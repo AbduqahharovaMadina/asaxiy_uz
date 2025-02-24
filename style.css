@@ -26,10 +26,27 @@ a:hover {
     height: 120px;
     background-color: white;
     position: fixed;
+    z-index: 1;
     top: 0;
     left: 0;
 }
-
+.sms{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgb(45, 138, 231);
+    position: fixed;
+    z-index: 1;
+    margin-left: 1230px;
+    margin-top: 420px;
+    display: flex;
+    border: 2px solid blue;
+    align-items: center;
+    justify-content: center;
+}
+.sms img{
+    width: 70%;
+}
 .assaxiy {
     width: 100%;
     display: flex;
@@ -135,7 +152,7 @@ a:hover {
 
 }
 
-/* PLANSHE TLAR UCHUN MOSLASH */
+
 @media (max-width: 1024px) {
     .navbar {
         height: 130px;
@@ -163,7 +180,7 @@ a:hover {
     }
 }
 
-/* MOBIL TELEFONLAR UCHUN MOSLASH */
+
 @media (max-width: 800px) {
     .navbar {
         height: auto;
@@ -360,10 +377,10 @@ select {
 }
 
 .gadjet {
-
     background-color: white;
     border-radius: 12px;
     padding: 0 10px;
+    position: relative;
     transition: 1s;
 
 
@@ -378,6 +395,40 @@ select {
     height: 45%;
 
 
+}
+.top{
+    width: 50px;
+    height: 20px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+    color: white;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 8px;
+}
+.chegirmalarrr{
+    width: 90px;
+    height: 20px;
+    border-radius: 3px;
+    margin-top: 5px;
+    margin-left: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gold;
+    color: white;
+    position: absolute;
+}
+.yurak{
+    width: 30px;
+    height: 40px;
+    display: block;
+    position: absolute;
+    margin-top: 35px;
+    margin-left: 180px;
 }
 
 .gadget2_img {
